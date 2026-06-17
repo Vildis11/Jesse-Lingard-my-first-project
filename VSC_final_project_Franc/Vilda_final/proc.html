@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Franc, žák 1. ročníku">
+    <meta name="description" content="Proč je Jesse Lingard můj hrdina + kontaktní formulář pro vzkazy.">
+    <meta name="keywords" content="Jesse Lingard, hrdina, vzor, kontakt, formulář">
+
+    <title>Proč právě on – Jesse Lingard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">JL<span>14</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="pribeh.html">Příběh</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="proc.html">Proč právě on</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Proč je můj hrdina</h1>
+
+        <p>
+            Jesse Lingard mě inspiruje, protože nikdy nic nevzdal. V akademii
+            byl nejmenší, kritici ho odepisovali, a přesto se probojoval do
+            prvního týmu Manchesteru United. Otevřeně mluví i o svých
+            psychických problémech, což chce odvahu. Ukazuje mi, že neúspěch
+            není konec – jen další důvod makat dál.
+        </p>
+
+        <h2>Napiš mi</h2>
+
+        <!-- FORMULÁŘ: action="#" znamená, že data se zatím nikam neposílají
+             (web nemá server). Ve škole si vyzkoušíme jen HTML část. -->
+        <form action="#" method="post">
+
+            <!-- label je popisek pole. Atribut for="..." se musí shodovat
+                 s id pole – kliknutí na popisek pak aktivuje pole. -->
+            <p>
+                <label for="jmeno">Tvoje jméno:</label>
+                <!-- required = pole musí být vyplněné, jinak formulář neodejde.
+                     placeholder = šedá nápověda uvnitř pole. -->
+                <input type="text" id="jmeno" name="jmeno" required placeholder="Např. Jan Novák">
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <!-- type="email" – prohlížeč sám zkontroluje, že je to e-mail -->
+                <input type="email" id="email" name="email" required placeholder="jan@email.cz">
+            </p>
+
+            <p>
+                <label for="heslo">Heslo (jen ukázka):</label>
+                <!-- type="password" – napsané znaky se zobrazují jako tečky -->
+                <input type="password" id="heslo" name="heslo">
+            </p>
+
+            <!-- fieldset seskupuje související pole, legend je jeho nadpis -->
+            <fieldset>
+                <legend>Jak moc fandíš fotbalu?</legend>
+                <!-- Radio buttony: stejný name = lze vybrat jen JEDNU možnost -->
+                <p>
+                    <input type="radio" id="hodne" name="fandeni" value="hodne">
+                    <label for="hodne">Hodně</label>
+                </p>
+                <p>
+                    <input type="radio" id="obcas" name="fandeni" value="obcas">
+                    <label for="obcas">Občas</label>
+                </p>
+                <p>
+                    <input type="radio" id="vubec" name="fandeni" value="vubec">
+                    <label for="vubec">Vůbec</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="klub">Oblíbený klub:</label>
+                <!-- select = rozbalovací nabídka, option = jednotlivé možnosti -->
+                <select id="klub" name="klub">
+                    <option value="manchester-united">Manchester United</option>
+                    <option value="west-ham">West Ham United</option>
+                    <option value="fc-seoul">FC Seoul</option>
+                    <option value="jiny">Jiný klub</option>
+                </select>
+            </p>
+
+            <p>
+                <!-- Checkbox: required = bez zaškrtnutí formulář neodejde -->
+                <input type="checkbox" id="souhlas" name="souhlas" required>
+                <label for="souhlas">Souhlasím s podmínkami</label>
+            </p>
+
+            <!-- type="submit" = tlačítko, které formulář odešle -->
+            <button type="submit">Odeslat vzkaz</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Franc, žák 1. ročníku</p>
+        <p class="paticka-odkazy">
+            <a href="proc.html">about the website</a> |
+            <a href="galerie.html">gallery</a> |
+            <a href="proc.html">contacts</a>
+        </p>
+    </footer>
+
+</body>
+</html>

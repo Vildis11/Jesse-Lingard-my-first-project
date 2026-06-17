@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- lang="cs" říká prohlížeči i vyhledávačům, že stránka je česky -->
+<html lang="cs">
+<head>
+    <!-- Kódování UTF-8 = správné zobrazení češtiny (ě, š, č, ř...) -->
+    <meta charset="UTF-8">
+    <!-- Viewport = stránka se přizpůsobí šířce mobilu, bez něj by byla zmenšená -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tagy: informace o stránce pro vyhledávače -->
+    <meta name="author" content="Franc, žák 1. ročníku">
+    <meta name="description" content="Úvodní stránka webu Můj hrdina o anglickém fotbalistovi Jessem Lingardovi.">
+    <meta name="keywords" content="Jesse Lingard, fotbal, Manchester United, můj hrdina">
+
+    <!-- Každá stránka má svůj vlastní (unikátní) titulek -->
+    <title>Jesse Lingard – Můj hrdina</title>
+
+    <!-- Připojení Google Fonts: Oswald pro nadpisy, Open Sans pro běžný text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Jeden společný CSS soubor pro celý web -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD = strukturovaná data. Vyhledávače (Google) díky nim přesně vědí,
+         o kom stránka je, a můžou zobrazit hezčí výsledek vyhledávání.
+         Návštěvník tento script vůbec nevidí. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jesse Lingard",
+        "birthDate": "1992-12-15",
+        "nationality": "English",
+        "jobTitle": "Professional footballer",
+        "description": "Anglický fotbalista, odchovanec Manchesteru United."
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HLAVIČKA: logo vlevo, menu vpravo (na mobilu pod sebou) -->
+    <header>
+        <a href="index.html" class="logo">JL<span>14</span></a>
+        <!-- nav = navigace, menu je seznam (ul) položek (li) s odkazy -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="pribeh.html">Příběh</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="proc.html">Proč právě on</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main = hlavní obsah stránky, na každé stránce je právě jednou -->
+    <main>
+
+        <!-- HERO sekce = velký úvodní blok, který návštěvníka přivítá.
+             Odchylka od wireframu: v náčrtu je vedle textu i obrázek,
+             tady je hero jen text + tlačítko, aby vynikl hlavní nadpis
+             a kód zůstal jednodušší. Fotky jsou hned v další sekci. -->
+        <section class="hero">
+            <!-- h1 je na stránce vždy jen JEDEN – hlavní nadpis -->
+            <h1>Jesse Lingard</h1>
+            <p class="podnadpis">Football career</p>
+            <!-- Tlačítko je obyčejný odkaz, vzhled tlačítka mu dává CSS třída -->
+            <a href="pribeh.html" class="tlacitko">more</a>
+        </section>
+
+        <!-- Sekce "About the hero": text vlevo, obrázek vpravo (flexbox) -->
+        <section class="dva-sloupce">
+            <div class="sloupec-text">
+                <!-- h2 následuje po h1 – nadpisy se nesmí přeskakovat -->
+                <h2>About the hero</h2>
+                <p>
+                    Jesse Lingard je anglický fotbalista, narozený v roce 1992
+                    ve Warringtonu. Je odchovancem slavné akademie Manchesteru
+                    United, kde strávil většinu kariéry a vyhrál FA Cup,
+                    Ligový pohár i Evropskou ligu. Proslul kreativní hrou,
+                    rychlostí a slavnými gólovými oslavami.
+                </p>
+            </div>
+            <div class="sloupec-obrazek">
+                <!-- alt text popisuje obrázek – důležité pro nevidomé i vyhledávače -->
+                <img src="images/Picture 1.jpg" alt="Jesse Lingard v dresu Manchesteru United slaví gól rukama před obličejem">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PATIČKA: copyright + odkazy podle wireframu.
+         Odchylka od wireframu: náčrt má i odkaz "The Beginning" –
+         příběh je už v hlavním menu, takže v patičce stačí tři odkazy. -->
+    <footer>
+        <p>© 2026 Franc, žák 1. ročníku</p>
+        <p class="paticka-odkazy">
+            <a href="proc.html">about the website</a> |
+            <a href="galerie.html">gallery</a> |
+            <a href="proc.html">contacts</a>
+        </p>
+    </footer>
+
+</body>
+</html>
