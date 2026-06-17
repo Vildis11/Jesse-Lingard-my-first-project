@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Franc, žák 1. ročníku">
+    <meta name="description" content="Fotogalerie Jesseho Lingarda – fotky z kariéry v Manchesteru United i FC Seoul.">
+    <meta name="keywords" content="Jesse Lingard, fotogalerie, fotky, fotbal">
+
+    <title>Galerie – Jesse Lingard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">JL<span>14</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="pribeh.html">Příběh</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="proc.html">Proč právě on</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fotogalerie</h1>
+        <p>Momenty z kariéry mého hrdiny.</p>
+
+        <!-- Galerie je flexbox s flex-wrap: položky se samy zalamují
+             na další řádek, když se nevejdou. Na mobilu (CSS) jeden sloupec. -->
+        <section class="galerie">
+            <!-- figure = obrázek + jeho popisek (figcaption) patří k sobě -->
+            <figure>
+                <img src="images/Picture 2.jpg" alt="Usměvavý Jesse Lingard slaví gól před fanoušky na Old Trafford">
+                <figcaption>Radost z gólu na Old Trafford</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Picture 1.jpg" alt="Jesse Lingard slaví gól rukama před obličejem">
+                <figcaption>Slavná gólová oslava</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Picture 3.webp" alt="Jesse Lingard s prstem na ústech po vstřeleném gólu">
+                <figcaption>Gesto pro fanoušky soupeře</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Franc, žák 1. ročníku</p>
+        <p class="paticka-odkazy">
+            <a href="proc.html">about the website</a> |
+            <a href="galerie.html">gallery</a> |
+            <a href="proc.html">contacts</a>
+        </p>
+    </footer>
+
+</body>
+</html>

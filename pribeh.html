@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description je na každé stránce jiná – popisuje právě tuto stránku -->
+    <meta name="author" content="Franc, žák 1. ročníku">
+    <meta name="description" content="Příběh kariéry Jesseho Lingarda – od akademie Manchesteru United po FC Seoul.">
+    <meta name="keywords" content="Jesse Lingard, kariéra, Manchester United, West Ham, FC Seoul">
+
+    <title>Příběh – Jesse Lingard</title>
+
+    <!-- Stejná písma a stejný CSS soubor jako na ostatních stránkách -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hlavička je na všech stránkách stejná – web pak působí jednotně -->
+    <header>
+        <a href="index.html" class="logo">JL<span>14</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="pribeh.html">Příběh</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="proc.html">Proč právě on</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Příběh mého hrdiny</h1>
+
+        <!-- article = samostatná, uzavřená část obsahu (jako kapitola).
+             Každá kapitola má svůj nadpis h2. -->
+        <article>
+            <h2>Mládí v akademii</h2>
+            <p>
+                Jesse vstoupil do akademie Manchesteru United už v sedmi letech.
+                Trenéři si všimli jeho techniky a rychlosti, i když byl menší
+                než ostatní kluci. Trpělivost se vyplatila – postupně prošel
+                všemi mládežnickými kategoriemi až do prvního týmu.
+            </p>
+        </article>
+
+        <article>
+            <h2>Průlom 2015–2016</h2>
+            <p>
+                V sezóně 2015/16 se Lingard prosadil do základní sestavy.
+                Sezónu korunoval nádherným vítězným gólem ve finále FA Cupu
+                proti Crystal Palace. Ze záložníka z akademie se stala hvězda
+                Old Trafford.
+            </p>
+        </article>
+
+        <article>
+            <h2>Hostování West Ham 2021</h2>
+            <p>
+                Na jaře 2021 odešel hostovat do West Hamu, kde zažil
+                fantastické období – v 16 zápasech vstřelil 9 gólů a vrátil
+                se i do anglické reprezentace.
+            </p>
+        </article>
+
+        <article>
+            <h2>Odchod do FC Seoul 2024</h2>
+            <p>
+                V roce 2024 překvapil přestupem do jihokorejského FC Seoul,
+                kde se stal jednou z největších hvězd tamní ligy a miláčkem
+                fanoušků.
+            </p>
+        </article>
+
+        <!-- Sémantická tabulka: caption = nadpis tabulky,
+             thead = hlavička, tbody = data, tfoot = souhrnný řádek -->
+        <table>
+            <caption>Klubová kariéra Jesseho Lingarda</caption>
+            <thead>
+                <tr>
+                    <!-- th = buňka hlavičky (tučně, popisuje sloupec) -->
+                    <th>Klub</th>
+                    <th>Období</th>
+                    <th>Zápasy</th>
+                    <th>Góly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manchester United</td>
+                    <td>2011–2022</td>
+                    <td>232</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>West Ham United (hostování)</td>
+                    <td>2021</td>
+                    <td>16</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Nottingham Forest</td>
+                    <td>2022–2023</td>
+                    <td>20</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>FC Seoul</td>
+                    <td>2024–dosud</td>
+                    <td>50</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Celkem</td>
+                    <td>2011–dosud</td>
+                    <td>318</td>
+                    <td>56</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Franc, žák 1. ročníku</p>
+        <p class="paticka-odkazy">
+            <a href="proc.html">about the website</a> |
+            <a href="galerie.html">gallery</a> |
+            <a href="proc.html">contacts</a>
+        </p>
+    </footer>
+
+</body>
+</html>
